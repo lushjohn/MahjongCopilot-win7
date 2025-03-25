@@ -1,0 +1,1 @@
+# MahjongCopilot-win7
