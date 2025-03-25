@@ -14,7 +14,9 @@ numpy==1.26.4（in version>=2，there has "Could not infer dtype of numpy.float3
 
 add lang ZHT
 
-use：add command after clone
+little issue：chrome win7 can't display unicode 16's MJ Tiles in /common/mj_helper.py
+
+how to use：add command below after clone MahjongCopilot
 
 git clone https://github.com/lushjohn/MahjongCopilot-win7 MahjongCopilot
 
