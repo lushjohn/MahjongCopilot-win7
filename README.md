@@ -10,6 +10,8 @@ mitmproxy==9.0.1（in version>=10，mitmproxy_rs has been splited from mitmproxy
 
 playwright==1.29（in version>=1.30，there has "playwright._impl._api_types.Error: Browser closed" issue in win7）
 
+numpy==1.26.4（in version>=2，there has "Could not infer dtype of numpy.float32" issue in win7，it cause render fail）
+
 add lang ZHT
 
 use：add command after clone
