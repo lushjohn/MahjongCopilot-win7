@@ -10,6 +10,8 @@ mitmproxy==9.0.1（in version>=10，mitmproxy_rs has been splited from mitmproxy
 
 playwright==1.29（in version>=1.30，there has "playwright._impl._api_types.Error: Browser closed" issue in win7）
 still have to copy playwright._impl._errors.py from https://github.com/microsoft/playwright-python/blob/main/playwright/_impl/_errors.py because it only exist in version>=1.40.
+before install chromium，you have to use command below to skip node's os check：
+set NODE_SKIP_PLATFORM_CHECK=1
 
 numpy==1.26.4（in version>=2，there has "Could not infer dtype of numpy.float32" issue in win7，it cause render fail）
 
@@ -20,4 +22,11 @@ add lang ZHT
 ＊how to use：add command below after clone MahjongCopilot
 
 git clone https://github.com/lushjohn/MahjongCopilot-win7 MahjongCopilot
+set NODE_SKIP_PLATFORM_CHECK=1
 
+
+also refer to：
+VxKex series/win7 EXT（they're not a single project）
+node（only support win7 in version>=19.X butnot in 18.X）
+
+maybe someone can tell me how to patch newest verison to support win7？
