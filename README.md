@@ -17,7 +17,10 @@ numpy==1.26.4（in version>=2，there has "Could not infer dtype of numpy.float3
 
 add lang ZHT
 
-＊little issue：chrome win7 can't display unicode 16's MJ Tiles in /common/mj_helper.py
+＊little issue：win7 can't display unicode 16's MJ Tiles in /common/mj_helper.py；you may install supported font below https://zh.wikipedia.org/zh-tw/%E9%BA%BB%E5%B0%87%E7%89%8C_(Unicode%E5%8D%80%E6%AE%B5)
+
+I guess the best one is win10 Segoe UI Emoji （include colored emoji）.
+
 
 ＊how to use：add command below after clone MahjongCopilot
 
