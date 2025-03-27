@@ -25,11 +25,15 @@ I guess the best one is win10 Segoe UI Emoji （include colored emoji）.
 ＊how to use：add command below after clone MahjongCopilot
 
 git clone https://github.com/lushjohn/MahjongCopilot-win7 MahjongCopilot
+
 set NODE_SKIP_PLATFORM_CHECK=1
 
 
 also refer to：
+
 VxKex series/win7 EXT（they're not a single project）
-node（only support win7 in version>=19.X butnot in 18.X）
+
+node（only support win7 in version<=19.X but not in 18.X）
+
 
 maybe someone can tell me how to patch newest verison to support win7？
