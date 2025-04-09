@@ -4,35 +4,33 @@ Fix from https://github.com/latorc/MahjongCopilot
 
 Use tool https://github.com/jixunmoe/py3-win7 to install python 3.11（hadn't try under python 3.8）
 
----
 
 ## FIX point：
 
-＊mitmproxy==9.0.1（in version>=10，mitmproxy_rs has been splited from mitmproxy and cause compile "from .mitmproxy_rs import *" issue in win7）
+* mitmproxy==9.0.1（in version>=10，mitmproxy_rs has been splited from mitmproxy and cause compile "from .mitmproxy_rs import *" issue in win7）
 
 
-＊playwright==1.29（in version>=1.30，there has "playwright._impl._api_types.Error: Browser closed" issue in win7）
+* playwright==1.29（in version>=1.30，there has "playwright._impl._api_types.Error: Browser closed" issue in win7）
 
 still have to copy playwright._impl._errors.py from https://github.com/microsoft/playwright-python/blob/main/playwright/_impl/_errors.py because it only exist in version>=1.40.
 
-＊before install chromium，you have to use command below to skip node's os check：
+* before install chromium，you have to use command below to skip node's os check：
 
 set NODE_SKIP_PLATFORM_CHECK=1
 
 
-＊numpy==1.26.4（in version>=2，there has "Could not infer dtype of numpy.float32" issue in win7，it cause render fail）
+* numpy==1.26.4（in version>=2，there has "Could not infer dtype of numpy.float32" issue in win7，it cause render fail）
 
 
-＊add lang ZHT
+* add lang ZHT
 
 
-＊little issue：you may install supported MJ Tile font below https://zh.wikipedia.org/zh-tw/%E9%BA%BB%E5%B0%87%E7%89%8C_(Unicode%E5%8D%80%E6%AE%B5)
+* little issue：you may install supported MJ Tile font below https://zh.wikipedia.org/zh-tw/%E9%BA%BB%E5%B0%87%E7%89%8C_(Unicode%E5%8D%80%E6%AE%B5)
 
 I guess the best one is win10 Segoe UI Emoji （include colored emoji，but still display colorless）.
 
-＊still not fix：pyinstaller can't package _errors.py into exe file（I think maybe there has command to support this？）
+* still not fix：pyinstaller can't package _errors.py into exe file（I think maybe there has command to support this？）
 
----
 
 ### how to use：
 
@@ -52,9 +50,9 @@ python main.py
 
 ## also refer to：
 
-VxKex series/win7 EXT（they're not a single project）
+* VxKex series/win7 EXT（they're not a single project）
 
-node（only support win7 in version<=19.X but not in 18.X）
+* node（only support win7 in version<=19.X but not in 18.X）
 
 
 maybe someone can tell me how to patch newest verison to support win7？
