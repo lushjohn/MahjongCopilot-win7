@@ -32,7 +32,7 @@ I guess the best one is win10 Segoe UI Emoji （include colored emoji，but stil
 * still not fix：pyinstaller can't package _errors.py into exe file（I think maybe there has command to support this？）
 
 
-### how to use：
+### how to use first：
 
 ```batch
 git clone https://github.com/latorc/MahjongCopilot.git
@@ -45,6 +45,14 @@ git clone https://github.com/microsoft/playwright-python/blob/main/playwright/_i
 set NODE_SKIP_PLATFORM_CHECK=1
 set PLAYWRIGHT_BROWSERS_PATH=0
 playwright install chromium
+python main.py
+```
+### how to use after：
+
+```batch
+cd MahjongCopilot
+CALL venv\Scripts\activate.bat
+set PLAYWRIGHT_BROWSERS_PATH=0
 python main.py
 ```
 
